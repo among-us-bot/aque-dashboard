@@ -1,60 +1,30 @@
 <template>
-  <div class="App">
-    <header class="App-header">
-      <img src="/logo.svg" class="App-logo" alt="logo" />
-      <p>
-        Edit
-        <code>src/App.vue</code> and save to reload.
-      </p>
-      <a
-        class="App-link"
-        href="https://vuejs.org"
-        target="_blank"
-        rel="noopener noreferrer"
-      >{{ message }}</a>
-    </header>
+  <div id="nav">
+    <router-link to="/">Home</router-link> |
+    <router-link to="/about">About</router-link>
   </div>
+  <router-view/>
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      message: "Learn Vue"
-    };
-  }
-};
-</script>
-
-<style>
-.App {
+<style lang="scss">
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   text-align: center;
+  color: #2c3e50;
 }
-.App-header {
-  background-color: #f9f6f6;
-  color: #32485f;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-}
-.App-link {
-  color: #00c185;
-}
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-  margin-bottom: 1rem;
-  animation: App-logo-spin infinite 1.6s ease-in-out alternate;
-}
-@keyframes App-logo-spin {
-  from {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(1.06);
+
+#nav {
+  padding: 30px;
+
+  a {
+    font-weight: bold;
+    color: #2c3e50;
+
+    &.router-link-exact-active {
+      color: #42b983;
+    }
   }
 }
 </style>
