@@ -1,30 +1,26 @@
-# aque-dashboard
+# New Project
 
-> Dashboard for the AQue discord bot
+> ✨ Bootstrapped with Create Snowpack App (CSA).
 
-## Build Setup
+## Available Scripts
 
-``` bash
-# install dependencies
-npm install
+### npm start
 
-# serve with hot reload at localhost:8080
-npm run dev
+Runs the app in the development mode.
+Open http://localhost:8080 to view it in the browser.
 
-# build for production with minification
-npm run build
+The page will reload if you make edits.
+You will also see any lint errors in the console.
 
-# build for production and view the bundle analyzer report
-npm run build --report
+### npm test
 
-# run unit tests
-npm run unit
+**⚠️ NOTE:** Vue 3 testing support is still in progress. This template does not ship with a test runner.
 
-# run e2e tests
-npm run e2e
+### npm run build
 
-# run all tests
-npm test
-```
+Builds the app for production to the `build/` folder.
+It correctly bundles Vue in production mode and optimizes the build for the best performance.
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+### Q: What about Eject?
+
+No eject needed! Snowpack guarantees zero lock-in, and CSA strives for the same.
