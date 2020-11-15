@@ -12,3 +12,5 @@ if not css_directory.is_dir():
 
 for sass_file in sass_directory.glob("*.scss"):
     system(f"sass {sass_file} {css_directory}/{str(sass_file).split('/')[-1][:-4] + 'css'}")
+
+print(" * Compiled sass!")
