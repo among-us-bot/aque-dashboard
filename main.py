@@ -20,4 +20,5 @@ app.register_blueprint(ui_test)
 
 if __name__ == '__main__':
     import sass_compile
-    app.run(port=8080, debug=True)
+    app.run(host="0.0.0.0", port=8080, debug=True)
+
