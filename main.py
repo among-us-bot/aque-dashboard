@@ -12,6 +12,7 @@ app = Flask(__name__)
 app.mongo = MongoClient(env["DATABASE_HOST"])
 app.db = app.mongo[env["DATABASE_DB"]]
 app.whitelisted = app.db["whitelisted"]
+app.guild_config = app.db["guild_config"]
 
 # Register blueprints
 app.register_blueprint(bot_invite)
